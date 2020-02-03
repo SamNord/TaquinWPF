@@ -1,0 +1,14 @@
+﻿<Window x:Class="TaquinWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaquinWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#00c943">
+        <Button Click="Jouer" Content="Jouer au jeu Taquin" Background="#c90032" Foreground="Aqua" FontSize="33" HorizontalAlignment="Left" Margin="240,155,0,0" VerticalAlignment="Top" Width="325" Height="80"/>
+        <Button Click="Quitter" Content="Quitter" Background="Black" Foreground="Red" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="675,365,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
+
+    </Grid>
+</Window>
