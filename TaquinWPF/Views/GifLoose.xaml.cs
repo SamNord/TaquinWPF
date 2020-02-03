@@ -29,7 +29,9 @@ namespace TaquinWPF.Views
 
         private void AfficherGif1()
         {
-            string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\loose1.gif";
+            /*le chemin de fichier est différent selon le pc*/
+            //string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\loose1.gif";
+            string fileName = @"c:Users\Administrateur\Desktop\CSharp\TaquinWPF\TaquinWPF\gifs\loose1.gif";
             BitmapImage imageSource = new BitmapImage();
             imageSource.BeginInit();
             imageSource.UriSource = new Uri(fileName);
