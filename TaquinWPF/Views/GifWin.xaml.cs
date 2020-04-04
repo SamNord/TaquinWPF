@@ -29,7 +29,8 @@ namespace TaquinWPF.Views
 
         private void AfficherGif()
         {
-            string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\win.gif";
+            string fileName = "win.gif";
+            string fullPath = System.IO.Path.GetFullPath(fileName);
             BitmapImage imageSource = new BitmapImage();
             imageSource.BeginInit();
             imageSource.UriSource = new Uri(fileName);

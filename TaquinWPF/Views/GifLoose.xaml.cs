@@ -31,11 +31,9 @@ namespace TaquinWPF.Views
         private void AfficherGif1()
         {
             string nameFile = "loose1.gif";
+            //méthode pour obtenir le chemin du fichier stocké dans dossier bin/debug
             string fullPath = System.IO.Path.GetFullPath(nameFile);
-            //string fullPath= System.IO.Path.GetPathRoot(@"\gifs\loose1.gif");
 
-            //MessageBox.Show(fullPath);
-            //string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\loose1.gif";
             BitmapImage imageSource = new BitmapImage();
             imageSource.BeginInit();
             imageSource.UriSource = new Uri(fullPath);

@@ -120,20 +120,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="gifs\chat3.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="gifs\loose.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="gifs\chat4.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="gifs\loose1.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="gifs\win.gif" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
