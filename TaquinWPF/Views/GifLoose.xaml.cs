@@ -30,6 +30,7 @@ namespace TaquinWPF.Views
 
         private void AfficherGif1()
         {
+
             string nameFile = "loose1.gif";
             //méthode pour obtenir le chemin du fichier stocké dans dossier bin/debug
             string fullPath = System.IO.Path.GetFullPath(nameFile);

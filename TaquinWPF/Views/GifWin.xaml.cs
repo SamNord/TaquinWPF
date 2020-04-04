@@ -33,7 +33,7 @@ namespace TaquinWPF.Views
             string fullPath = System.IO.Path.GetFullPath(fileName);
             BitmapImage imageSource = new BitmapImage();
             imageSource.BeginInit();
-            imageSource.UriSource = new Uri(fileName);
+            imageSource.UriSource = new Uri(fullPath);
             imageSource.EndInit();
 
             /*Pour utiliser ImageBehavior il faut installer 

@@ -150,7 +150,7 @@ namespace TaquinWPF.Views
                     GifWin winWindow = new GifWin();
                     winWindow.Show();
                 }
-                else if (Convert.ToInt32(labelCpt.Content.ToString()) > 700)
+                else if (Convert.ToInt32(labelCpt.Content.ToString()) > 500)
                 {
                     timer.Stop();
                     MessageBox.Show("Perdu !");
