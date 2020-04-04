@@ -21,37 +21,30 @@ namespace TaquinWPF.Views
     /// </summary>
     public partial class GifLoose : Window
     {
+        
         public GifLoose()
         {
             InitializeComponent();
-            AfficherLesGifs();
+            AfficherLesGifs();          
         }
 
         private void AfficherGif1()
         {
-            string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\loose1.gif";
+            string nameFile = "loose1.gif";
+            string fullPath = System.IO.Path.GetFullPath(nameFile);
+            //string fullPath= System.IO.Path.GetPathRoot(@"\gifs\loose1.gif");
+
+            //MessageBox.Show(fullPath);
+            //string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\loose1.gif";
             BitmapImage imageSource = new BitmapImage();
             imageSource.BeginInit();
-            imageSource.UriSource = new Uri(fileName);
+            imageSource.UriSource = new Uri(fullPath);
             imageSource.EndInit();
 
-            /*Pour utiliser ImageBehavior il faut installer 
-             * le package nuget WpfAnimatedGif */
+            ///*Pour utiliser ImageBehavior il faut installer 
+            // * le package nuget WpfAnimatedGif */
             ImageBehavior.SetAnimatedSource(monImage, imageSource);
         }
-
-        //private void AfficherGif2()
-        //{
-        //    string fileName = @"c:\Users\PC_DellPro\source\repos\TaquinWPF\TaquinWPF\gifs\loose.gif";
-        //    BitmapImage imageSource = new BitmapImage();
-        //    imageSource.BeginInit();
-        //    imageSource.UriSource = new Uri(fileName);
-        //    imageSource.EndInit();
-
-        //    /*Pour utiliser ImageBehavior il faut installer 
-        //     * le package nuget WpfAnimatedGif */
-        //    ImageBehavior.SetAnimatedSource(monImage, imageSource);
-        //}
 
         private void AfficherLesGifs()
         {

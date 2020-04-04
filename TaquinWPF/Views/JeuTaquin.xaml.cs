@@ -150,7 +150,7 @@ namespace TaquinWPF.Views
                     GifWin winWindow = new GifWin();
                     winWindow.Show();
                 }
-                else if (Convert.ToInt32(labelCpt.Content.ToString()) > 1000)
+                else if (Convert.ToInt32(labelCpt.Content.ToString()) > 700)
                 {
                     timer.Stop();
                     MessageBox.Show("Perdu !");
@@ -229,7 +229,7 @@ namespace TaquinWPF.Views
             return chaine == chaineWin;
         }
 
-        //ajouter un TextBlock pour le décompte
+        //ajout d'un TextBlock pour le décompte
         private void CreateZoneTimer()
         {
             tbTime = new TextBlock() { FontSize = 21, FontWeight = FontWeights.Bold, Foreground = Brushes.Red };
@@ -238,7 +238,7 @@ namespace TaquinWPF.Views
             Grid.SetColumn(tbTime, 4);
         }
 
-        //Ajouter un décompte
+        //Ajout du décompte
         private void CreateTimer(object sender, RoutedEventArgs e)
         {
             time = TimeSpan.FromSeconds(0);
