@@ -24,21 +24,21 @@ namespace TaquinWPF.Views
         public GifWin()
         {
             InitializeComponent();
-            AfficherGif();
+            //AfficherGif();
         }
 
         private void AfficherGif()
         {
-            string fileName = "win.gif";
-            string fullPath = System.IO.Path.GetFullPath(fileName);
-            BitmapImage imageSource = new BitmapImage();
-            imageSource.BeginInit();
-            imageSource.UriSource = new Uri(fullPath);
-            imageSource.EndInit();
+            //string fileName = "win.gif";
+            //string fullPath = System.IO.Path.GetFullPath(fileName);
+            //BitmapImage imageSource = new BitmapImage();
+            //imageSource.BeginInit();
+            //imageSource.UriSource = new Uri(fullPath);
+            //imageSource.EndInit();
 
-            /*Pour utiliser ImageBehavior il faut installer 
-             * le package nuget WpfAnimatedGif */
-            ImageBehavior.SetAnimatedSource(monImage, imageSource);
+            ///*Pour utiliser ImageBehavior il faut installer 
+            // * le package nuget WpfAnimatedGif */
+            //ImageBehavior.SetAnimatedSource(monImage, imageSource);
         }
     }
 }

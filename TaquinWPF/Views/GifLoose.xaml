@@ -12,7 +12,7 @@
             <FlowDocument>
                 <Paragraph>
                     <InlineUIContainer>
-                        <Image x:Name="monImage" Height="430" Width="795" />
+                        <Image x:Name="monImage" gif:ImageBehavior.RepeatBehavior="Forever" gif:ImageBehavior.AnimatedSource="{StaticResource loose}"  Height="430" Width="795" />
                     </InlineUIContainer>
                 </Paragraph>
             </FlowDocument>

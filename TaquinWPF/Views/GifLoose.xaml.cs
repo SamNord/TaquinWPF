@@ -25,7 +25,7 @@ namespace TaquinWPF.Views
         public GifLoose()
         {
             InitializeComponent();
-            AfficherLesGifs();          
+            //AfficherLesGifs();          
         }
 
         private void AfficherGif1()
@@ -34,7 +34,7 @@ namespace TaquinWPF.Views
             string nameFile = "loose1.gif";
             //méthode pour obtenir le chemin du fichier stocké dans dossier bin/debug
             string fullPath = System.IO.Path.GetFullPath(nameFile);
-
+            
             BitmapImage imageSource = new BitmapImage();
             imageSource.BeginInit();
             imageSource.UriSource = new Uri(fullPath);

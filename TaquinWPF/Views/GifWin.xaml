@@ -6,13 +6,13 @@
          xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:TaquinWPF.Views"
         mc:Ignorable="d"
-        Title="GifWin" Height="450" Width="800">
+        Title="GifWin" Height="450" Width="800" AllowsTransparency="True" WindowStyle="None" Visibility="Visible">
     <Grid>
-        <RichTextBox RenderTransformOrigin="0.562,0.525" Margin="0,0,-13,0">
+        <RichTextBox RenderTransformOrigin="0.562,0.525">
             <FlowDocument>
                 <Paragraph>
                     <InlineUIContainer>
-                        <Image x:Name="monImage" Height="430" Width="795" />
+                        <Image x:Name="monImage" gif:ImageBehavior.RepeatBehavior="Forever" gif:ImageBehavior.AnimatedSource="{StaticResource win}" Height="465" Width="780" />
                     </InlineUIContainer>
                 </Paragraph>
             </FlowDocument>

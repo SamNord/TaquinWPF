@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:TaquinWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="loose" UriSource="images\loose1.gif"></BitmapImage>
+            <BitmapImage x:Key="win" UriSource="images\win.gif"></BitmapImage>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
